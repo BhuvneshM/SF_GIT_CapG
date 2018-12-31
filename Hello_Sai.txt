@@ -1,1 +1,93 @@
 Hi Welocome...
+
+What is ECS-Financials?
+
+It is major application within ECS, that deals with payment related functionalities during claim handling. 
+
+Following are the major functionalities like: 
+ Payments
+Cause of Loss (COL)
+Recoveries
+Background Payments
+Financial Log
+Suit/ADR
+Accounting Reporting
+
+-------------------
+FUNCTION:  Payments
+
+The disbursement of monies to Claimants, Insureds,
+Participants, Vendors, and other miscellaneous parties.
+
+Must be associated to a COL/Participant
+Payment Types:
+Create
+Record 
+Recurring 
+Sight Draft 
+Replacement Services 
+Consolidated 
+EFT payments
+FastTracks
+-----------------------
+FUNCTION:  Cause of Loss (COL)::
+
+This functionality is out of the Financial Domain’s scope but is very tightly coupled with the rest of Financials.    
+
+Ties the Claim to a specific coverage on the Policy  
+Serves as the “hub” in the way that our financial data is organized
+Required for Payments, Recoveries, Suit/ADR, Accounting Reporting, etc
+A COL is a code that is used to help identify the reason for the Claim
+-------------------------
+
+FUNCTION:  Recoveries
+
+Money being credited back to the claim as a result of indemnity
+payments made by a responsible party or from salvage sales.  
+
+Must be associated to a COL/Participant  
+There must be a payment on the claim before a recovery can be recorded
+Subrogation
+Salvage
+Indemnity/Expense
+Donated Salvage 
+Recovery Status Changes:  Return, Cancel, Update
+  
+A single vendor can batch multiple recovery payments back to State Farm on behalf of multiple claims in a Bulk Recovery
+-----------------------------
+FUNCTION:  Financial Log
+
+A search mechanism for Payments, Recoveries, combined 
+Payments and Recoveries, and Recurring Payments within 
+the context of a claim
+
+The user can search for various search criteria:
+All 
+COL 
+Participant COL 
+Additional filter criteria:  Date Ranges, Payee, etc
+Specific split code criteria:  Paycode, Recovery Type, etc
+
+--------------------------------------
+FUNCTION:  Suit/ADR
+
+Tracking mechanism for lawsuits and alternative dispute resolutions.
+Must be associated to a COL/Participant
+Can be handled by an internal attorney that is part of a Claim Litigation Counsel (CLC) office
+
+------------------------------------------
+FUNCTION:  Background Payments
+
+Batch processing required to support Payment functionality
+
+Consolidated/EFT/Recurring Payments
+Time based processing to issue payments in a pended process:
+Users enter payments throughout day in a given Claim Office
+Multiple claims during day may result in payments to the same payee (Lynx, Home Depot, etc…)
+
+File Based processing from downstream:
+Paid/PNI - Keeping Claim System in synch with Cash Disbursed
+CLC Payments - Allocating legal expenses back to the claims
+Flood Automatic Stop pay
+-------------------------------------------
+
