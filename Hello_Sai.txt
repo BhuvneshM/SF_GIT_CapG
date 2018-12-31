@@ -90,4 +90,68 @@ Paid/PNI - Keeping Claim System in synch with Cash Disbursed
 CLC Payments - Allocating legal expenses back to the claims
 Flood Automatic Stop pay
 -------------------------------------------
+FUNCTION:  Background Payments (Cont’d)
+Autopay - Automatic generation of payment based on receipt of Bill with no user intervention:
+Glass
+Rental
+Service First
+PSP
+eMedical
+Canada Medical(HCAII)
+-------------------------------------------
+FUNCTION:  Accounting Reporting
+
+Method for reporting claim activity to areas inside and outside of 
+State Farm 
+ 
+Data used by Underwriting, Financial Statements, Rating, Actuary, etc:
+Financial data affects State Farm financial statements
+Statistical data affects rating decisions and product offerings
+Claim activity reported to the State Insurance Departments
+Rates set based on actual claim experience
+Forecasting reserves
+Balancing dollars between systems
+
+-------------------------------------------
+FUNCTION:  Accounting Reporting (Cont’d)
+Collection of information or “snapshot” of claim information at the point in time when the activity occurs
+Centralized Accounting Reporting brings all of the above activity on a particular claim together so it can be reported collectively
+Loss Detail
+Cash Disbursed
+Flood (Fire only)
+Workers Comp (Fire only)
+EFT
+-------------------------------------------
+Data required for the functionality :
+Financials Functionality needs:
+
+Organization data
+Claim data
+Policy data
+Participant data
+Bill data
+Performer data (includes Security)
+Vendor (CVIT) data 
+-------------------------------------------
+Data Services for the functionality/data:
+
+Financials Functionality: 
+
+Type of data services: 
+ Querymappers
+ Stored procedures
+Access Methods:
+	AICS procedures
+	IMS transactions
+-------------------------------------------
+Technical knowledge needed for support:
+
+J2EE architecture
+ Java
+AICS (Accenture Insurance Component Solution)
+IBM COBOL 
+SQL 
+IMS  
+-------------------------------------------
+
 
